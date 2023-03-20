@@ -419,7 +419,7 @@ func extractFields(r reflectValue) (structInfo, error) {
 			continue
 		}
 
-		tag := f.Tag.Get("caddy")
+		tag := f.Tag.Get("caddyfile")
 		if tag == "" {
 			// no tag, so default kind
 			info.blockFields = append(info.blockFields, fieldInfo{
